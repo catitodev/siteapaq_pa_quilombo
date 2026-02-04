@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           <Link to="/" className="group flex items-center gap-4">
             <div className="w-12 h-12 relative">
                 <img 
-                    src="/images/logo.svg" 
+                    src={`${import.meta.env.BASE_URL}images/logo.svg`} 
                     alt="Logo APAQ" 
                     className={`w-full h-full object-contain group-hover:scale-110 transition-all duration-500 ${isDarkBackground ? 'brightness-0 invert' : ''}`}
                     onError={(e) => {
@@ -104,7 +104,11 @@ const Header: React.FC = () => {
         <div className={`absolute right-0 top-0 h-full w-full md:w-[480px] bg-white/80 backdrop-blur-xl shadow-2xl transition-transform duration-700 ease-out flex flex-col ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="p-8 md:p-10 flex justify-between items-center border-b border-gray-100/50 shrink-0">
             <div className="flex items-center gap-3">
-                <img src="logo.png" alt="APAQ" className="w-10 h-10 object-contain" />
+                <img 
+                  src={`${import.meta.env.BASE_URL}images/logo.svg`}
+                  alt="APAQ"
+                  className="w-10 h-10 object-contain" 
+                />
                 <span className="text-gray-900 font-bold uppercase tracking-widest text-[10px]">Navegação</span>
             </div>
             <button 
