@@ -1,0 +1,7 @@
+{
+  "name": "APAQ - Associação PA Quilombo",
+  "description": "Um site institucional disruptivo e emocional para a APAQ, focado em impacto social, regeneração ambiental e o legado de 30 anos da comunidade do Quilombo no Mato Grosso.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
