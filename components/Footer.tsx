@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-4 mb-6">
-                <img src="logo.png" alt="APAQ Logo" className="w-14 h-14 object-contain brightness-0 invert opacity-80" />
+                <img src="/images/logo.png" alt="APAQ Logo" className="w-14 h-14 object-contain brightness-0 invert opacity-80" />
                 <div>
                     <h2 className="text-lg font-bold tracking-tight">Associação PA Quilombo</h2>
                     <p className="text-emerald-500 text-[8px] md:text-[7px] uppercase tracking-[0.25em] leading-tight opacity-70">Lago do Manso • Chapada dos Guimarães • MT</p>
