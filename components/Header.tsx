@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           <Link to="/" className="group flex items-center gap-4">
             <div className="w-12 h-12 relative">
                 <img 
-                    src="/images/logo.png" 
+                    src="/images/logo.svg" 
                     alt="Logo APAQ" 
                     className={`w-full h-full object-contain group-hover:scale-110 transition-all duration-500 ${isDarkBackground ? 'brightness-0 invert' : ''}`}
                     onError={(e) => {
