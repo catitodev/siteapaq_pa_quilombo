@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                 <img 
                     src={`${import.meta.env.BASE_URL}images/logo.svg`} 
                     alt="Logo APAQ" 
-                    className={`w-full h-full object-contain group-hover:scale-110 transition-all duration-500 ${isDarkBackground ? 'brightness-0 invert' : ''}`}
+                    className="w-full h-full object-contain group-hover:scale-110 transition-all duration-500"
                     onError={(e) => {
                         e.currentTarget.src = `https://placehold.co/100x100/${isDarkBackground ? 'ffffff/059669' : '059669/ffffff'}?text=APAQ`;
                     }}
