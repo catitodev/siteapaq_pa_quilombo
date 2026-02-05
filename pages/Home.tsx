@@ -46,7 +46,7 @@ const Home: React.FC = () => {
     alt: 'ANdC'
   },
   {
-    src: `${import.meta.env.BASE_URL}images/logo_sospantanal.jpg`,
+    src: `${import.meta.env.BASE_URL}images/sospantanal.svg`,
     alt: 'sospantanal'
   },
   {
@@ -62,8 +62,8 @@ const Home: React.FC = () => {
     alt: 'GPBR'
   },
   {
-    src: `${import.meta.env.BASE_URL}images/Logo_Agroforestdao.png`,
-    alt: 'Logo_Agroforestdao'
+    src: `${import.meta.env.BASE_URL}images/agroforestDAO.svg`,
+    alt: 'Agroforestdao'
   },
   {
     src: `${import.meta.env.BASE_URL}images/calangofluxlogo.png`,
