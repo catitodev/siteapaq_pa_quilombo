@@ -133,28 +133,29 @@ const Home: React.FC = () => {
           <div className="reveal order-2 lg:order-1 relative">
             <div className="absolute -top-10 -left-10 w-24 h-24 md:w-40 md:h-40 bg-emerald-50 rounded-full blur-3xl -z-10" />
             <div className="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl aspect-square md:aspect-video lg:aspect-[4/5] group">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                >
-                  <source 
-                    src={`${import.meta.env.BASE_URL}images/loc_brasil_lagodomanso.mp4`} 
-                    type="video/mp4" 
-                  />
-                </video>
-
+               <video
+                 autoPlay
+                 muted
+                 loop
+                 playsInline
+                 preload="auto"
+                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+               >
+                 <source
+                   src={`${import.meta.env.BASE_URL}images/loc_brasil_lagodomanso.mp4`}
+                   type="video/mp4"
+                 />
+               </video>
+            
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent opacity-60" />
                 
                 <button 
                   onClick={handleMapsClick}
                   className="absolute bottom-6 right-6 md:bottom-10 md:right-10 w-14 h-14 md:w-16 md:h-16 bg-white text-emerald-900 rounded-full font-bold flex items-center justify-center hover:bg-emerald-50 transition-all shadow-xl group/btn"
                   aria-label="Ver localização no Google Maps"
-                >
-                  <MapPin size={24} className="group-hover/btn:animate-bounce" />
-                </button>
+               >
+                 <MapPin size={24} className="group-hover/btn:animate-bounce" />
+               </button>
             </div>
           </div>
 
