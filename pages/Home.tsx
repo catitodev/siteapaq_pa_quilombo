@@ -40,12 +40,50 @@ const Home: React.FC = () => {
     "https://images.unsplash.com/photo-1563223552-30d01fda3ead?auto=format&fit=crop&q=80&w=600"
   ];
 
-  const partnerLogos = Array.from({ length: 10 }, (_, i) => ({
-    name: `Parceiro ${i + 1}`,
-    id: i + 1
-  }));
+  const partnerLogos = [
+  {
+    src: `${import.meta.env.BASE_URL}images/ANDC.jpg`,
+    alt: 'ANdC'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/logo_sospantanal.jpg`,
+    alt: 'sospantanal'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/floRestas_social.jpg`,
+    alt: 'floRestas_social'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/CVT_MT.jpg`,
+    alt: 'CVT_MT'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/GPBR.jpg`,
+    alt: 'GPBR'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/Logo_Agroforestdao.png`,
+    alt: 'Logo_Agroforestdao'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/calangofluxlogo.png`,
+    alt: 'calangofluxlogo'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/pbzlogo.png`,
+    alt: 'pbzlogo'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/ReRe_web3_regen.jpg`,
+    alt: 'ReRe_web3_regen'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/OCA.jpg`,
+    alt: 'OCA'
+  }
+];
 
-  return (
+   return (
     <div className="page-transition overflow-x-hidden">
       {/* 1. Hero (Manifesto de Abertura) */}
       <section className="relative min-h-[100vh] md:min-h-[110vh] w-full flex items-center justify-center overflow-hidden bg-[#1a1f1f]">
@@ -215,17 +253,21 @@ const Home: React.FC = () => {
         {/* Carrossel de Parceiros - Sem textos, apenas logos */}
         <div className="reveal overflow-hidden" style={{ transitionDelay: '0.3s' }}>
           <div className="animate-scroll-reverse flex items-center gap-12 md:gap-24">
-            {[...partnerLogos, ...partnerLogos].map((partner, i) => (
-              <div key={i} className="flex flex-col items-center justify-center group flex-shrink-0">
-                <div className="w-16 h-16 md:w-24 md:h-24 bg-white shadow-sm rounded-2xl flex items-center justify-center border border-gray-100 group-hover:border-emerald-200 transition-all duration-500 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100">
-                  <img 
-                    src={`https://placehold.co/200x200/ffffff/059669?text=${partner.name.split(' ')[1]}`} 
-                    alt={partner.name}
-                    className="w-10 h-10 md:w-14 md:h-14 object-contain"
-                  />
-                </div>
-              </div>
-            ))}
+            {[...partnerLogos, ...partnerLogos].map((logo, i) => (
+           <div
+             key={i}
+             className="flex items-center justify-center group flex-shrink-0"
+           >
+             <div className="w-16 h-16 md:w-24 md:h-24 bg-white shadow-sm rounded-2xl flex items-center justify-center border border-gray-100 group-hover:border-emerald-200 transition-all duration-500 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100">
+               <img
+                 src={logo.src}
+                 alt={logo.alt}
+                 className="w-12 h-12 md:w-16 md:h-16 object-contain"
+                 loading="lazy"
+               />
+            </div>
+          </div>
+        ))}
           </div>
         </div>
       </section>
