@@ -95,11 +95,19 @@ const Home: React.FC = () => {
           <div className="reveal order-2 lg:order-1 relative">
             <div className="absolute -top-10 -left-10 w-24 h-24 md:w-40 md:h-40 bg-emerald-50 rounded-full blur-3xl -z-10" />
             <div className="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl aspect-square md:aspect-video lg:aspect-[4/5] group">
-                <img 
-                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200" 
-                    alt="Lago do Manso drone view" 
-                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                >
+                  <source 
+                    src={`${import.meta.env.BASE_URL}images/loc_brasil_lagodomanso.mp4`} 
+                    type="video/mp4" 
+                  />
+                </video>
+
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent opacity-60" />
                 
                 <button 
