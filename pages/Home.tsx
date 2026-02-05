@@ -139,7 +139,7 @@ const Home: React.FC = () => {
       <section className="relative py-32 md:py-48 px-6 overflow-hidden min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
             <img 
-                src="https://images.unsplash.com/photo-1599408080299-1582260654ec?auto=format&fit=crop&q=80&w=2000" 
+                src={`${import.meta.env.BASE_URL}images/foto_paginainicial.jpg`}
                 className="w-full h-full object-cover opacity-30 scale-105"
                 alt="Comunidade PA Quilombo"
             />
