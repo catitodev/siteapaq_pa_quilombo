@@ -28,14 +28,14 @@ const Home: React.FC = () => {
   };
 
   const carouselImages = [
-    `${import.meta.env.BASE_URL}images/2anos_aguasqfalam.jpg`,
+    `${import.meta.env.BASE_URL}images/evento.jpg`,
     `${import.meta.env.BASE_URL}images/festa_pa.jpg`,
     `${import.meta.env.BASE_URL}images/brigadistas.jpg`,
     `${import.meta.env.BASE_URL}images/com_senar.jpg`,
     `${import.meta.env.BASE_URL}images/foto_paginainicial.jpg`,
     `${import.meta.env.BASE_URL}images/festejo.jpg`,
     `${import.meta.env.BASE_URL}images/lago_do_manso.jpg`,
-    `${import.meta.env.BASE_URL}images/lixo_tolerancia_zero.jpg`,
+    `${import.meta.env.BASE_URL}images/doações.jpg`,
     `${import.meta.env.BASE_URL}images/mulheres.jpg`,
     `${import.meta.env.BASE_URL}images/tds.jpg`,
   ];
