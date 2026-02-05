@@ -28,16 +28,16 @@ const Home: React.FC = () => {
   };
 
   const carouselImages = [
-    "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1599408080299-1582260654ec?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1501472312651-726afe119ff1?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1495107336281-199515227377?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1563223552-30d01fda3ead?auto=format&fit=crop&q=80&w=600"
+    `${import.meta.env.BASE_URL}images/2anos_aguasqfalam.jpg`,
+    `${import.meta.env.BASE_URL}images/festa_pa.jpg`,
+    `${import.meta.env.BASE_URL}images/brigadistas.jpg`,
+    `${import.meta.env.BASE_URL}images/com_senar.jpg`,
+    `${import.meta.env.BASE_URL}images/foto_paginainicial.jpg`,
+    `${import.meta.env.BASE_URL}images/festejo.jpg`,
+    `${import.meta.env.BASE_URL}images/lago_do_manso.jpg`,
+    `${import.meta.env.BASE_URL}images/lixo_tolerancia_zero.jpg`,
+    `${import.meta.env.BASE_URL}images/mulheres.jpg`,
+    `${import.meta.env.BASE_URL}images/tds.jpg`,
   ];
 
   const partnerLogos = [
