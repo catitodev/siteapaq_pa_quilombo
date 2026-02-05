@@ -9,11 +9,17 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-4 mb-6">
-                <img src="/images/logo.png" alt="APAQ Logo" className="w-14 h-14 object-contain brightness-0 invert opacity-80" />
+                <img 
+                  src={`${import.meta.env.BASE_URL}images/logo.svg`} 
+                  alt="APAQ Logo" 
+                  className="w-14 h-14 object-contain opacity-90"
+                />
                 <div>
                     <h2 className="text-lg font-bold tracking-tight">Associação PA Quilombo</h2>
-                    <p className="text-emerald-500 text-[8px] md:text-[7px] uppercase tracking-[0.25em] leading-tight opacity-70">Lago do Manso • Chapada dos Guimarães • MT</p>
-                </div>
+                    <p className="text-emerald-500 text-[8px] md:text-[7px] uppercase tracking-[0.25em] leading-tight opacity-70">
+                      Lago do Manso • Chapada dos Guimarães • MT
+                    </p>
+                </div>             
             </div>
             <h2 className="text-lg md:text-xl font-serif mb-6 italic text-emerald-50/70">"Feito com muito afeto entre nós de nós."</h2>
             <p className="text-gray-400 max-w-sm mb-8 text-sm leading-relaxed">
